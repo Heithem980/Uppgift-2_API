@@ -17,7 +17,7 @@ public class Controller {
 	
 	PlayerData data, data2;
 	
-	@RequestMapping(method = RequestMethod.GET, path ="/player1")
+	@RequestMapping(method = RequestMethod.POST, path ="/player1")
 	public String player1(String choice) { 
 		
 		data  = new PlayerData(choice);
@@ -25,7 +25,7 @@ public class Controller {
 		return "<h3>You have choosen: "+choice+"</h3>";
 	}
 	
-	@RequestMapping(method = RequestMethod.GET, path ="/player2")
+	@RequestMapping(method = RequestMethod.POST, path ="/player2")
 	public String player2(String choice) { 
 		
 		data2  = new PlayerData(choice);
